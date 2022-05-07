@@ -10,6 +10,14 @@ function login() {
 }
 
 function logout() {
+    $_SESSION['logged_in'] = false;
     $_SESSION = [];
     session_destroy();
+}
+
+function require_login($logged_in) {
+    if ($logged_in == false) {
+        header('Location: login.php');
+        exit;
+    }
 }

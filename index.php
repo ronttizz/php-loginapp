@@ -6,7 +6,8 @@ include 'header.php';
 
   <div>
     <h3>This is the home page for the site</h3>
-    <p>If you have an account you will see some really cool stuff!</p>
+    <p>If you have an account you can login. Check session_details.php for dummy user.</p>
+    <p>Site is made only for school assignment and should be revised highly before using in a real world application. The principles are same though as in real application.</p>
 
 <?php
 include 'footer.php'
